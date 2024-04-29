@@ -1,0 +1,21 @@
+public class ques7_8 {
+    public static void main(String[] args) {
+        System.out.println("Using do-while loop:");
+        printFibonacciWithDoWhile();
+    }
+    public static void printFibonacciWithDoWhile() {
+        int count = 20;
+        int first = 0, second = 1;
+        int i = 1;
+
+        do {
+            System.out.print(first + " ");
+
+            int next = first + second;
+            first = second;
+            second = next;
+
+            i++;
+        } while (i <= count);
+    }
+}
